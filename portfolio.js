@@ -5,7 +5,7 @@
  */
 //Toggle hamburger menu icon and links
 function myToggle(){
-    let myLinks = document.getElementsByClass("topnav");
+    let myLinks = document.getElementById("mytopnav");
     if (myLinks.className === "topnav"){
         myLinks.className += " responsive";
     } else {
