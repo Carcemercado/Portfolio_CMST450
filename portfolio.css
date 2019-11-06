@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Orbitron:700&display=swap');
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;font-size:3vh;}
-h1{background-color:#ffffff;padding:10px;margin:0;font-size:5vh;text-align:center;overflow:hidden}
+body{background-color: rgb(180,180,180); font-family: 'Montserrat Alternates', sans-serif, 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;font-size:3vh;}
+h1{background-color:rgb(180, 180, 180);color: #003333; text-shadow: 0 0 5px #008b8b; color: #000000; font-family: 'Orbitron', sans-serif; padding:10px;margin:0;font-size:5vh;text-align:center;overflow:hidden}
 
 .topnav {
     background-color: #008b8b;
@@ -31,32 +32,67 @@ h1{background-color:#ffffff;padding:10px;margin:0;font-size:5vh;text-align:cente
 .topnav .icon {
     display: none;
 }
-/* Create three equal columns that floats next to each other */
-.column{
-    float: left;
-}
-.column-onethird {
-    width: 33.33%;
-}
-.column-onefourth{
-    width: 25%;
-}
-.column-half{
-    width: 50%;
-}
-
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+.row, .row > .column{
+    padding: 10px;
+}
+.main{
+    max-width: 60%;
+    margin: auto;
+}
+
+/* Create three equal columns that floats next to each other */
+.column{
+    float: left;
+    width: 33%;
+}
+.column-onethird {
+    float: left;
+    width: 33.33%;
+}
+
+.column-half{
+    float: left;
+    width: 50%;
+}
+.column-full{
+    float: left;
+    width: 80%;
+}
+.content{
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 8px 6px #888888;
+}
+.fa-arrow-up{
+    float: right;
+    background-color: #008b8b;
+    color: #ffffff;
+    border-radius: 50px;
+    visibility: hidden;
+
+}
+.footer footer {
+    background-color: #003333;
+    color: #ffffff;
+    font-size: 2.2vh;
+    text-align: center;
+    padding: 10px;
+}
 img {
     max-width: 100%;
     display: block;
     height: auto;
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1300px) {
     body {
         font-size: 3.5vh;
     }
@@ -64,6 +100,78 @@ img {
     h1 {
         font-size: 4vh;
         padding: 0px;
+    }
+
+    .main {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .column {
+        width: 50%;
+    }
+
+    .column-onethird {
+        width: 50%;
+    }
+
+    .column-half {
+        width: 50%;
+    }
+
+    .column-full {
+        width: 50%;
+    }
+
+    .row,
+    .row>.column {
+        padding: 2px;
+    }
+    .fa-arrow-up{
+        visibility: visible;
+    }
+    .content:last-child{
+        box-shadow: none;
+    }
+
+}
+@media only screen and (max-width:700px) {
+    body {
+        font-size: 3.5vh;
+    }
+
+    h1 {
+        font-size: 4vh;
+        padding: 0px;
+    }
+    .main{
+        max-width: 100%;
+        margin: 0;
     }
     .topnav a:not(:first-child) {
         display: none;
@@ -88,5 +196,21 @@ img {
     .column{
         width: 100%;
     }
-
+    .column-onethird{
+        width: 100%;
+    }
+    .column-half{
+        width: 100%;
+    }
+    .column-full{
+        width: 100%;
+    }
+    .row,
+    .row>.column {
+        padding: 2px;
+    }
+    .fa-arrow-up{
+        visibility: visible;
+    }
 }
+
