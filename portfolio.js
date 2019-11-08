@@ -22,3 +22,10 @@ window.onload = function myDate(){
         document.getElementById('dateYear').innerHTML = `&copy; ${dateYear} Carlos Arce. All rights reserved.`;
     }
 }
+
+/**
+ * Icons used
+ * <i class="fa fa-html5" aria-hidden="true"></i>
+ * <i class="fa fa-css3" aria-hidden="true"></i>
+ * 
+ */
